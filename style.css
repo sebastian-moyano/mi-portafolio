@@ -1,0 +1,1373 @@
+:root{
+    --fondoSM: rgb(163, 13, 13);
+    --sm: rgb(92, 14, 7);
+    --fondologo: #e79e56;
+    --fondoteclas: white;
+    --dimencionteclas: 5px;
+    --colorLetras : rgb(243, 234, 234);
+    --fondoDeCajas: rgba(243, 234, 234, 0.171);
+    --fondoCanvas: rgb(34, 133, 158);
+    
+}
+*{
+    margin: 0;
+}
+body{
+    margin: 0;
+    background:rgb(241, 203, 166);
+   
+}
+body::-webkit-scrollbar{
+    width: 7px;
+    background: #e79f5673 ;
+    
+}
+body::-webkit-scrollbar-thumb{
+    background: rgb(240, 127, 6)  ;
+    
+}
+.imaFondo{
+    
+    width: 100%;
+    height: 100%;
+
+
+}
+.contenedorCarga{
+    z-index: 999999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: var(--fondologo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s ease-in-out;
+}
+.techo{
+    border: 20px solid transparent;
+    border-top-color: var(--sm);
+    border-left-color: var(--sm);
+    border-right-color: var(--sm);
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: auto;
+    animation: girar 4s linear infinite;
+    
+}
+
+
+@keyframes girar {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.fondoSM{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 5;
+
+}
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+canvas{
+    position: absolute;
+    background: var(--fondoCanvas);
+    top: 0;
+    left: 0;
+}
+.contenedorResponsive{
+    max-width: 1000px;
+    
+}
+.nav{
+    position: absolute;
+    clear:both;
+    width:100%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin: 0;
+    padding: 0;
+    
+}
+ #menu{
+     z-index: 1;
+    position: relative;
+    width: 100%;
+    clear: both;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding:0;
+    background: #e79f5673;
+}
+#menu li{
+    
+    float: left;   
+}
+#menu li a{
+    text-decoration: none;
+    padding: 40px;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--colorLetras);
+    letter-spacing: 2px;
+}
+#menu li a:hover{
+color:black;
+}
+.logoNav{
+    z-index: 2;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    float: right;
+}
+.logoNav img{
+    width: 150px;
+    height: 150px;
+}
+.botonMenu{
+    z-index: 1;
+  position:absolute;
+  display: none;
+}
+h3{
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    
+}
+.foto{
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    background-image: url(imagenes/sebastian3.png);
+    background-size: 95px;
+    background-position: center;
+    background-clip: border-box;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: flotar 3s linear infinite;
+    
+}
+
+@keyframes flotar {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+.presentacion{
+    background: white;
+    position: absolute;
+    top: 320px;
+    left: 100px;
+    width: 20%;
+    height: 50%;
+    max-height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    overflow: auto;
+    padding: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 2px;
+    cursor: all-scroll;
+}
+
+.presentacion::-webkit-scrollbar{
+    width: 7px;
+    background: #e79f5673;
+
+}
+.presentacion::-webkit-scrollbar-thumb{
+    background: rgb(240, 127, 6) ;
+}
+
+.presentacion > p{
+    float:right;
+    background: linear-gradient(to right, red, rgb(94, 90, 90),rgb(202, 185, 185),rgb(209, 27, 27),black);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;  
+}
+
+
+
+.curriculum{
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    width: 60%;
+    height: 50%;
+    border: 2px solid black;
+    background: rgba(44, 41, 38, 0.541);
+    border-radius: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: auto;
+    letter-spacing: 2px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.curriculum::-webkit-scrollbar{
+    width: 7px;
+    background: #e79f5673;
+
+}
+.curriculum::-webkit-scrollbar-thumb{
+    background: rgb(240, 127, 6) ;
+}
+.curriculum h1{
+    text-decoration: underline;
+    text-decoration-color: rgba(240, 127, 6, 0.61);
+    background: linear-gradient(to right, rgb(226, 217, 217),rgb(170, 145, 145), rgb(141, 137, 137),rgb(226, 217, 217),rgb(197, 180, 105),rgb(167, 153, 79));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; 
+}
+.curriculum p{
+    background: linear-gradient(to right, rgb(226, 217, 217),rgb(189, 176, 176), rgb(141, 137, 137),rgb(226, 217, 217),rgb(197, 180, 105),rgb(167, 153, 79));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; 
+}
+.curriculum h4{
+    background: linear-gradient(to right,rgb(226, 217, 217), rgb(170, 145, 145), rgb(141, 137, 137),rgb(226, 217, 217),rgb(197, 180, 105),rgb(167, 153, 79));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; 
+   
+}
+.contenedorIconos{
+    position: absolute;
+    bottom: o;
+    display: flex;
+    padding-left: 0;
+}
+.whatsapp svg{
+    width: 80px;
+    height: 80px;
+    color: rgb(240, 127, 6) ;
+    padding-left: 20px;
+}
+.telegram svg{
+    width: 80px;
+    height: 80px;
+    color: rgb(240, 127, 6) ;
+    padding-left: 20px;
+}
+.twitter svg{
+    width: 80px;
+    height: 80px;
+    color: rgb(240, 127, 6) ;
+    padding-left: 20px;
+}
+.mail {
+    position: relative;
+   bottom: -50px;
+    float: right;
+    color: black ;
+    padding-left: 30px;
+}
+.whatsapp svg:hover{
+    width: 90px;
+    height: 90px;
+    bottom: 20px;
+}
+.telegram svg:hover{
+    width: 90px;
+    height: 90px;
+    bottom: 20px;
+}
+.twitter svg:hover{
+    width: 90px;
+    height: 90px;
+    bottom: 20px;
+}
+
+.contenedorFormulario{
+    background: rgba(35, 35, 148, 0.589);
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 300px;
+    height: 400px;
+    border: solid 2px rgba(35, 35, 148, 0.589);
+    border-radius: 20px;
+}
+.formulario{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left:0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(238, 213, 112, 0.781);
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+}
+.Pform{
+    color: black;
+    letter-spacing: 5px;
+    padding: 20px 0 10px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    font-weight: 500;
+}
+.Pform:hover{
+    animation: letrasMoviendo 2s linear infinite ;
+}
+@keyframes letrasMoviendo{
+    0%{
+        letter-spacing: 7px;
+        transform: rotate(5deg);
+    }
+    100%{
+        letter-spacing: 10px;
+    }
+    }
+.input{
+    position: relative;
+    width: 80%;
+    height: 10%;
+    margin: 0 0 0 10px; 
+    border-radius: 7px;
+    border-color: rgba(238, 213, 112, 0.781);
+    padding-left: 10px;
+
+}
+
+.mensajeTexto{
+    position: absolute;
+    width: 80%;
+    height: 20%;
+    margin: 0 0 0 10px; 
+    border-radius: 7px;
+    border-color: rgba(238, 213, 112, 0.781);
+    padding-left: 10px;
+    padding-top: 20px;
+    min-width: 80%;
+    max-width: 80%;
+    max-height: 25%;
+    min-height: 20%;
+}
+.mensajeTexto::-webkit-scrollbar{
+    width: 7px;
+    background: #e79f5673;
+}
+.mensajeTexto::-webkit-scrollbar-thumb{
+    background: rgb(240, 127, 6) ;
+}
+.botonEnviar{
+    letter-spacing: 5px;
+    position: absolute;
+    width: 95%;
+    bottom: 5px;
+    left: 5px;
+    border-radius: 10px;
+    background: rgba(35, 35, 148, 0.589);
+    border-color: cornsilk;
+}
+.botonEnviar:hover{
+    letter-spacing: 10px;
+    transition: 2s;  
+}
+#imagenes{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    top: 120px;
+    left: 20%;
+}
+
+#html5{
+    width: 50%;
+    height: 60%;
+    align-items: center;
+}
+
+#css3{
+    width: 50%;
+    height: 60%;
+}
+
+#js{
+    width: 50%;
+    height: 60%;
+}
+
+#responsive{
+    width: 50%;
+    height: 60%;
+}
+#git{
+    width: 50%;
+    height: 60%;
+}
+
+.contenedorProyectos{
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    height: 100%;
+}
+.imgCele{
+    position: relative;
+    top: 50px;
+    left: 10%;
+    width: 30%;
+    height: 70%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.paginaCele{
+    position: absolute;
+    top: 50px;
+    right: 10%;
+    width: 40%;
+    height: 40%;
+    border: solid 2px black;
+    border-radius: 15px;
+    background: rgba(44, 41, 38, 0.541);
+    overflow: auto;
+}
+.paginaCele p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 0 0 10px;
+    background: linear-gradient(to right, rgb(226, 217, 217),rgb(189, 176, 176), rgb(141, 137, 137),rgb(226, 217, 217),rgb(197, 180, 105),rgb(167, 153, 79));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;  
+}
+.enlase:hover{
+    background: red;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; 
+}
+.paginaCele::-webkit-scrollbar{
+    width: 7px;
+    background: #e79f5673;
+    border-radius: 20px;
+
+}
+.paginaCele::-webkit-scrollbar-thumb{
+    background: rgb(240, 127, 6) ;
+    border-radius: 20px;
+}
+.juegoSeba{
+    position: absolute;
+    top: 550px;
+    left: 10%;
+    width: 30%;
+    height: 70%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.juego{
+    position: absolute;
+    top: 550px;
+    right: 10%;
+    width: 40%;
+    height: 40%;
+    border: solid 2px black;
+    border-radius: 15px;
+    background: rgba(44, 41, 38, 0.541);
+    overflow: auto;
+}
+.juego p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 0 0 10px;
+    background: linear-gradient(to right, rgb(226, 217, 217),rgb(189, 176, 176), rgb(141, 137, 137),rgb(226, 217, 217),rgb(197, 180, 105),rgb(167, 153, 79));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;  
+}
+.juego::-webkit-scrollbar{
+    width: 7px;
+    background: #e79f5673;
+    border-radius: 20px;
+
+}
+.juego::-webkit-scrollbar-thumb{
+    background: rgb(240, 127, 6) ;
+    border-radius: 20px;
+}
+@media screen and (max-width: 800px){
+    #menu li a{
+        padding: 10px;
+        font-size: 15px;
+    font-weight: 700;
+    }
+    .logoNav{
+        top: -10px;
+        right: 10px;
+    }
+    .logoNav img{
+        width: 50px;
+        height: 50px;
+        
+    }
+    .presentacion{
+        top: 100px;
+        left: 30%;
+        width: 40%;
+        height: 50%;
+    }
+    .curriculum{
+        top:400px;
+        left: 20%;
+    }
+    .contenedorFormulario{
+        top: 100px;
+    }
+}
+@media screen and (max-width: 768px){
+    #menu li a{
+        padding: 10px;
+        font-size: 15px;
+    font-weight: 700;
+    }
+    .logoNav{
+        top: -10px;
+        right: 10px;
+    }
+    .logoNav img{
+        width: 50px;
+        height: 50px;
+        
+    }
+    .presentacion{
+        top: 100px;
+        left: 30%;
+        width: 30%;
+        height: 30%;
+    }
+    .curriculum{
+        top:420px;
+        left: 20%;
+    }
+    .contenedorFormulario{
+        top: 0;
+    }
+    .contenedorIconos{
+        bottom: 0;
+    }
+    .mail{
+        bottom:-190px;
+    }
+    .imgCele{
+        width: 30%;
+        height: 40%;
+    }
+    .juegoSeba{
+        width: 30%;
+        height: 40%;  
+    }
+    .imaFondo{
+        display: flex;
+    }
+    
+    .html5{
+        width: 30%;
+        height: 40%; 
+    } 
+    .css3{
+        width: 30%;
+        height: 40%;
+        top: 800px;
+        
+    }
+    .js{
+        width: 30%;
+        height: 40%; 
+        top: 1350px;
+    }
+    .responsive{
+        width: 30%;
+        height: 40%; 
+        top: 1900px; 
+    }
+}
+@media screen and (max-width: 600px) {
+    .presentacion{
+        left: 30%;
+        width: 40%;
+        height: 50%;
+    }
+    .curriculum{
+        top:400px;
+        left: 20%;
+    }
+    .logoNav{
+        top: -10px;
+        right: 2px;
+    }
+}
+@media screen and (max-width: 550px){
+    #imagenes{
+        top: 0;
+    }
+    .responsive{
+        top: 760px;
+    }
+    .foto{
+        top: 50px;
+    }
+    .presentacion{
+        top: 190px;
+    }
+
+    .imaFondo{
+        position:fixed;
+    }
+    .nav #menu{
+        width: 60%;
+        height: 100%;
+        left: -100%;
+        position: fixed;
+        
+    }
+    .nav #menu li{
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.829);
+    }
+    
+    
+    .botonMenu{
+        background: #e79f5673;
+        right: 0;
+        display: block;
+        position: absolute;
+        top: -10px;
+        padding: 5px;
+        border-radius: 20px;
+    }
+    .botonMenu img{
+        width: 60px;
+        height: 50px;
+    }
+    .logoNav{
+        display: none;
+        float: none;
+        top: 150px;
+        left: -100%;
+        position: fixed;
+        animation: logoOpaco 4s linear;
+    }
+    .logoNav img{
+        width: 300px;
+        height: 300px;
+        transition: .7s;
+    }
+    
+    
+    .contenedorFormulario{
+        top: 10px;
+    }
+    .formulario{
+        top: 0;
+        
+    }
+    .contenedorIconos{
+        bottom: -60px;
+        display: flexbox;
+        
+    }
+    .html5{
+        top: 60px;
+    }
+    .css3{
+        top: 320px;
+    }
+    .js{
+        top: 540px;
+    }
+    #responsive{
+        top: 840px;
+    }
+    
+    .imgCele{
+        top: 0;
+        
+    }
+    .paginaCele{
+        top: 0;
+    }
+    .juegoSeba{
+        top: 370px;
+        
+    }
+    .juego{
+        top: 370px;
+    }
+    .mail{
+        position: absolute;
+        bottom: -65px;
+    }
+
+}
+@keyframes logoOpaco{
+0%{
+opacity: 0;
+}
+100%{
+opacity: 100%;
+}
+}
+@media screen and (max-width: 380px){
+    .nav #menu{
+        width: 60%;
+    }
+
+    .presentacion{
+        left: 20%;
+        width: 80%;
+        height: 50%;
+    }
+    .curriculum{
+        top:400px;
+        left: 10%;
+        width: 90%;
+}
+.mail{
+    bottom: -150px;
+}
+.contenedorProyectos{
+    top: 60px;
+}
+.imgCele{
+    left: 2%;
+    width: 45%;
+
+}
+.paginaCele{
+    right: 2%;
+    width: 45%;
+}
+.juegoSeba{
+    left: 2%;
+    width: 45%;
+
+}
+.juego{
+    right: 2%;
+    width: 45%;
+}
+#imagenes{
+    top: 0;
+}
+#html5{
+    width: 50%;
+    height: 50%;
+}
+.html5{
+    right: 5%;
+    width: 45%; 
+     
+}
+#css3{
+    width: 50%;
+    height: 50%;
+}
+.css3{
+    right: 5%;
+    width: 45%;
+    
+}
+#js{
+    
+    width: 50%;
+    height: 50%;
+   
+}
+.js{
+    right: 5%;
+    width: 45%;
+   
+}
+#responsive{
+    width: 50%;
+    height: 50%;
+    
+}
+.responsive{
+    right: 5%;
+    width: 45%;  
+    
+}
+
+}
+@media screen and (max-width: 360px){
+    .nav #menu{
+        width: 60%;
+    }
+
+    .presentacion{
+        top: 100px;
+        left: 20%;
+        width: 60%;
+        height: 40%;
+    }
+    .curriculum{
+        top:400px;
+        left: 10%;
+        width: 90%;
+}
+.mail{
+    bottom: -100px;
+}
+.contenedorProyectos{
+    top: 60px;
+}
+.imgCele{
+    left: 2%;
+    width: 45%;
+    height:55% ;
+}
+.paginaCele{
+    right: 2%;
+    width: 45%;
+}
+.juegoSeba{
+    left: 2%;
+    width: 45%;
+    height: 55%;
+
+}
+.juego{
+    right: 2%;
+    width: 45%;
+}
+#imagenes{
+    top: 0;
+}
+#html5{
+    width: 50%;
+    height: 50%;
+}
+.html5{
+    right: 5%;
+    width: 45%; 
+     
+}
+#css3{
+    width: 50%;
+    height: 50%;
+}
+.css3{
+    right: 5%;
+    width: 45%;
+    top: 360px;
+}
+#js{
+    
+    width: 50%;
+    height: 50%;
+   
+}
+.js{
+    right: 5%;
+    width: 45%;
+   top: 690px;
+}
+#responsive{
+    width: 50%;
+    height: 50%;
+    
+}
+.responsive{
+    right: 5%;
+    width: 45%;  
+    top: 970px;
+}
+
+}
+@media screen and (max-width: 374px){
+    .nav #menu{
+        width: 60%;
+    }
+
+    .presentacion{
+        left: 20%;
+        width: 80%;
+        height: 50%;
+    }
+    .curriculum{
+        top:400px;
+        left: 10%;
+        width: 90%;
+}
+.mail{
+    bottom: -150px;
+}
+.contenedorProyectos{
+    top: 60px;
+}
+.imgCele{
+    left: 2%;
+    width: 45%;
+
+}
+.paginaCele{
+    right: 2%;
+    width: 45%;
+}
+.juegoSeba{
+    left: 2%;
+    width: 45%;
+
+}
+.juego{
+    right: 2%;
+    width: 45%;
+}
+#imagenes{
+    top: 0;
+}
+#html5{
+    width: 50%;
+    height: 50%;
+}
+.html5{
+    right: 5%;
+    width: 45%; 
+     
+}
+#css3{
+    width: 50%;
+    height: 50%;
+}
+.css3{
+    right: 5%;
+    width: 45%;
+    
+}
+#js{
+    
+    width: 50%;
+    height: 50%;
+   
+}
+.js{
+    right: 5%;
+    width: 45%;
+   
+}
+#responsive{
+    width: 50%;
+    height: 50%;
+    
+}
+.responsive{
+    right: 5%;
+    width: 45%;  
+    top: 1000px;
+}
+
+}
+@media screen and (max-width: 411px){
+    .nav #menu{
+        width: 60%;
+    }
+
+    .presentacion{
+        top: 250px;
+        left: 20%;
+        width: 60%;
+        height: 40%;
+    }
+    .curriculum{
+        top:400px;
+        left: 10%;
+        width: 90%;
+}
+.mail{
+    bottom: -100px;
+}
+.contenedorProyectos{
+    top: 60px;
+}
+.imgCele{
+    left: 2%;
+    width: 40%;
+    height:50% ;
+}
+.paginaCele{
+    right: 2%;
+    width: 45%;
+}
+.juegoSeba{
+    left: 2%;
+    width: 40%;
+    height: 50%;
+
+}
+.juego{
+    right: 2%;
+    width: 45%;
+}
+#imagenes{
+    top: 0;
+}
+#html5{
+    width: 50%;
+    height: 50%;
+}
+.html5{
+    right: 5%;
+    width: 45%; 
+     
+}
+#css3{
+    width: 50%;
+    height: 50%;
+}
+.css3{
+    right: 5%;
+    width: 45%;
+    top: 430px;
+}
+#js{
+    
+    width: 50%;
+    height: 50%;
+   
+}
+.js{
+    right: 5%;
+    width: 45%;
+   top: 790px;
+}
+#responsive{
+    width: 50%;
+    height: 50%;
+    
+}
+.responsive{
+    right: 5%;
+    width: 45%;  
+    top: 1120px;
+}
+
+}
+@media screen and (max-width: 412px){
+    .nav #menu{
+        width: 60%;
+    }
+
+    .presentacion{
+        top: 50px;
+        left: 20%;
+        width: 60%;
+        height: 40%;
+    }
+    .curriculum{
+        top:400px;
+        left: 10%;
+        width: 90%;
+}
+.mail{
+    bottom: -100px;
+}
+.contenedorProyectos{
+    top: 60px;
+}
+.imgCele{
+    left: 2%;
+    width: 40%;
+    height:45% ;
+}
+.paginaCele{
+    right: 2%;
+    width: 45%;
+}
+.juegoSeba{
+    left: 2%;
+    width: 40%;
+    height: 45%;
+
+}
+.juego{
+    right: 2%;
+    width: 45%;
+}
+#imagenes{
+    top: 0;
+}
+#html5{
+    width: 50%;
+    height: 50%;
+}
+.html5{
+    right: 5%;
+    width: 45%; 
+     
+}
+#css3{
+    width: 50%;
+    height: 50%;
+}
+.css3{
+    right: 5%;
+    width: 45%;
+    top: 500px;
+}
+#js{
+    
+    width: 50%;
+    height: 50%;
+   
+}
+.js{
+    right: 5%;
+    width: 45%;
+   top: 900px;
+}
+#responsive{
+    width: 50%;
+    height: 50%;
+    
+}
+.responsive{
+    right: 5%;
+    width: 45%;  
+    top: 1240px;
+}
+
+}
+@media screen and (max-width: 414px){
+    .nav #menu{
+        width: 60%;
+    }
+    .foto{
+        top: 50px;
+    }
+    
+
+    .presentacion{
+        top: 190px;
+        left: 20%;
+        width: 60%;
+        height: 40%;
+    }
+    .curriculum{
+        top:400px;
+        left: 10%;
+        width: 90%;
+}
+.mail{
+    bottom: -100px;
+}
+.contenedorProyectos{
+    top: 60px;
+}
+.imgCele{
+    left: 2%;
+    width: 40%;
+    height:45% ;
+}
+.paginaCele{
+    right: 2%;
+    width: 45%;
+}
+.juegoSeba{
+    left: 2%;
+    width: 40%;
+    height: 45%;
+
+}
+.juego{
+    right: 2%;
+    width: 45%;
+}
+#imagenes{
+    top: 0;
+}
+#html5{
+    width: 50%;
+    height: 50%;
+}
+.html5{
+    right: 5%;
+    width: 45%; 
+     
+}
+#css3{
+    width: 50%;
+    height: 50%;
+}
+.css3{
+    right: 5%;
+    width: 45%;
+    top: 500px;
+}
+#js{
+    
+    width: 50%;
+    height: 50%;
+   
+}
+.js{
+    right: 5%;
+    width: 45%;
+   top: 900px;
+}
+#responsive{
+    width: 50%;
+    height: 50%;
+    
+}
+.responsive{
+    right: 5%;
+    width: 45%;  
+    top: 1240px;
+}
+
+}
+@media screen and (max-width: 320px){
+    .nav #menu{
+        width: 60%;
+    }
+
+    .presentacion{
+        top: 50px;
+        left: 20%;
+        width: 60%;
+        height: 40%;
+    }
+    .curriculum{
+        top:330px;
+        left: 10%;
+        width: 90%;
+}
+.mail{
+    bottom: -100px;
+}
+.contenedorProyectos{
+    top: 60px;
+}
+.imgCele{
+    left: 2%;
+    width: 40%;
+    height:45% ;
+}
+.paginaCele{
+    right: 2%;
+    width: 45%;
+}
+.juegoSeba{
+    left: 2%;
+    width: 40%;
+    height: 45%;
+
+}
+.juego{
+    right: 2%;
+    width: 45%;
+}
+#imagenes{
+    top: 0;
+}
+#html5{
+    width: 50%;
+    height: 50%;
+}
+.html5{
+    right: 5%;
+    width: 45%; 
+     
+}
+#css3{
+    width: 50%;
+    height: 50%;
+}
+.css3{
+    right: 2%;
+    width: 50%;
+    top: 320px;
+}
+#js{
+    
+    width: 50%;
+    height: 50%;
+   
+}
+.js{
+    right: 2%;
+    width: 50%;
+   top: 580px;
+}
+#responsive{
+    width: 50%;
+    height: 50%;
+    
+}
+.responsive{
+    right: 2%;
+    width: 50%;  
+    top: 930px;
+}
+
+}
+@media screen and (max-width: 375px){
+    .css3{
+        top: 360px;
+    }
+    .js{
+        top: 700px;
+    }
+    .foto{
+        top: 50px;
+    }
+    .presentacion{
+        top: 190px;
+    }
+    .responsive{
+        top: 1000px;
+    }
+}
+@media screen and (max-width: 280px ) {
+    .foto{
+        top:30px;
+    }
+    
+    .presentacion{
+        top: 170px;
+        width: 80%;
+        left: 10px;
+    }
+    .curriculum{
+        left: 0;
+        width: 95%;
+        top: 400px;
+    }
+}
