@@ -440,6 +440,10 @@ h3{
     width: 50%;
     height: 60%;
 }
+#react{
+    width:50%;
+    height:60%;
+}
 
 .contenedorProyectos{
     position: absolute;
@@ -1268,12 +1272,12 @@ opacity: 100%;
 }
 
 }
-@media screen and (max-width: 318px){
+@media screen and (max-width: 316px){
     .nav #menu{
         width: 60%;
     }
     .foto{
-        top: 10px;
+        top: 0;
     }
 
     .presentacion{
