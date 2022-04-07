@@ -7,24 +7,30 @@
     --colorLetras : rgb(243, 234, 234);
     --fondoDeCajas: rgba(243, 234, 234, 0.171);
     --fondoCanvas: rgb(34, 133, 158);
-    
+    --colorBacgraund: rgb(241, 203, 166);
+    --fondoScroll:#e79f5673;
+    --fondoScrollThumb: rgb(240, 127, 6)  ;
+    --colorMenu: #e79f5673;
+    --colorIconos: rgb(240, 127, 6) ;
+    --colorFormulario:rgba(35, 35, 148, 0.589); 
+    --fondoFormulario:rgba(238, 213, 112, 0.781);
+    --imput: rgba(238, 213, 112, 0.781);
 }
 *{
     margin: 0;
 }
 body{
     margin: 0;
-    background:rgb(241, 203, 166);
+    background:var(--colorBacgraund);
    
 }
 body::-webkit-scrollbar{
     width: 7px;
-    background: #e79f5673 ;
+    background: var(--fondoScroll) ;
     
 }
 body::-webkit-scrollbar-thumb{
-    background: rgb(240, 127, 6)  ;
-    
+    background: var(--fondoScrollThumb);
 }
 .imaFondo{
     
@@ -112,7 +118,7 @@ canvas{
     list-style: none;
     margin: 0;
     padding:0;
-    background: #e79f5673;
+    background: var(--colorMenu) ;
 }
 #menu li{
     
@@ -200,11 +206,11 @@ h3{
 
 .presentacion::-webkit-scrollbar{
     width: 7px;
-    background: #e79f5673;
+    background: var(--fondoScroll);
 
 }
 .presentacion::-webkit-scrollbar-thumb{
-    background: rgb(240, 127, 6) ;
+    background: var(--fondoScrollThumb) ;
 }
 
 .presentacion > p{
@@ -234,11 +240,11 @@ h3{
 }
 .curriculum::-webkit-scrollbar{
     width: 7px;
-    background: #e79f5673;
+    background: var(--fondoScroll);
 
 }
 .curriculum::-webkit-scrollbar-thumb{
-    background: rgb(240, 127, 6) ;
+    background: var(--fondoScrollThumb) ;
 }
 .curriculum h1{
     text-decoration: underline;
@@ -267,25 +273,25 @@ h3{
 .whatsapp svg{
     width: 80px;
     height: 80px;
-    color: rgb(240, 127, 6) ;
+    color: var(--colorIconos);
     padding-left: 20px;
 }
 .telegram svg{
     width: 80px;
     height: 80px;
-    color: rgb(240, 127, 6) ;
+    color: var(--colorIconos);
     padding-left: 20px;
 }
 .twitter svg{
     width: 80px;
     height: 80px;
-    color: rgb(240, 127, 6) ;
+    color: var(--colorIconos);
     padding-left: 20px;
 }
 .github svg{
     width: 80px;
     height: 80px;
-    color: rgb(240, 127, 6) ;
+    color: var(--colorIconos);
     padding-left: 20px;
 }
 .mail {
@@ -317,7 +323,7 @@ h3{
 }
 
 .contenedorFormulario{
-    background: rgba(35, 35, 148, 0.589);
+    background: var(--colorFormulario);
     position: absolute;
     top: 300px;
     left: 0;
@@ -326,7 +332,7 @@ h3{
     margin: auto;
     width: 300px;
     height: 400px;
-    border: solid 2px rgba(35, 35, 148, 0.589);
+    border: solid 2px var(--colorFormulario);
     border-radius: 20px;
 }
 .formulario{
@@ -336,7 +342,7 @@ h3{
     left:0;
     bottom: 0;
     margin: auto;
-    background: rgba(238, 213, 112, 0.781);
+    background: var(--fondoFormulario);
     width: 250px;
     height: 350px;
     border-radius: 10px;
@@ -367,7 +373,7 @@ h3{
     height: 10%;
     margin: 0 0 0 10px; 
     border-radius: 7px;
-    border-color: rgba(238, 213, 112, 0.781);
+    border-color: var(--imput);
     padding-left: 10px;
 
 }
@@ -378,7 +384,7 @@ h3{
     height: 20%;
     margin: 0 0 0 10px; 
     border-radius: 7px;
-    border-color: rgba(238, 213, 112, 0.781);
+    border-color: var(--imput);
     padding-left: 10px;
     padding-top: 20px;
     min-width: 80%;
@@ -388,10 +394,10 @@ h3{
 }
 .mensajeTexto::-webkit-scrollbar{
     width: 7px;
-    background: #e79f5673;
+    background: var(--fondoScroll);
 }
 .mensajeTexto::-webkit-scrollbar-thumb{
-    background: rgb(240, 127, 6) ;
+    background: var(--fondoScrollThumb) ;
 }
 .botonEnviar{
     letter-spacing: 5px;
@@ -400,13 +406,14 @@ h3{
     bottom: 5px;
     left: 5px;
     border-radius: 10px;
-    background: rgba(35, 35, 148, 0.589);
+    background: var(--colorFormulario);
     border-color: cornsilk;
 }
 .botonEnviar:hover{
     letter-spacing: 10px;
     transition: 2s;  
 }
+
 #imagenes{
     width: 100%;
     height: 100%;
@@ -487,12 +494,12 @@ h3{
 }
 .paginaCele::-webkit-scrollbar{
     width: 7px;
-    background: #e79f5673;
+    background: var(--fondoScroll);
     border-radius: 20px;
 
 }
 .paginaCele::-webkit-scrollbar-thumb{
-    background: rgb(240, 127, 6) ;
+    background: var(--fondoScrollThumb) ;
     border-radius: 20px;
 }
 .juegoSeba{
@@ -527,12 +534,12 @@ h3{
 }
 .juego::-webkit-scrollbar{
     width: 7px;
-    background: #e79f5673;
+    background: var(--fondoScroll);
     border-radius: 20px;
 
 }
 .juego::-webkit-scrollbar-thumb{
-    background: rgb(240, 127, 6) ;
+    background: var(--fondoScrollThumb) ;
     border-radius: 20px;
 }
 @media screen and (max-width: 800px){
