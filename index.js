@@ -33,7 +33,7 @@ else{
 });
  // animacion de lluevia
  function lluvia(){
-  let monto = 70;
+  let monto = 40;
   let body = document.querySelector("body");
   let i = 0;
   while (i < monto) {
