@@ -34,3 +34,20 @@
     transform: translate(-50%, -50%);
     transition: .1s;
 }
+i{
+    position: absolute;
+    z-index: 9999;
+    height: 200px;
+    background: linear-gradient(transparent, rgba(245, 240, 240, 0.534));
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: animate 5s infinite linear;
+}
+@keyframes animate {
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(calc(100vh + 200px));
+    }
+}
