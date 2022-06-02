@@ -238,6 +238,22 @@ h3{
     font-weight: 600;
     font-size: 20px;
 }
+.descarga a{
+    position: absolute;
+    right: 250px;
+    top: 500px;
+    font-family: fantasy;
+    font-size: 25px;
+    color:white;
+    text-decoration: none;
+    text-shadow: red 5px 10px 10px,
+                 red -5px 10px 10px,
+                 red 5px -10px 10px,
+                 red -5px -10px 10px;
+}
+.descarga a:hover{
+  color: black;  
+}
 .curriculum::-webkit-scrollbar{
     width: 7px;
     background: var(--fondoScroll);
@@ -542,7 +558,10 @@ h3{
     background: var(--fondoScrollThumb) ;
     border-radius: 20px;
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 820px){
+    .descarga a{
+        top: 1000px;
+        }
     #menu li a{
         padding: 10px;
         font-size: 15px;
@@ -572,6 +591,9 @@ h3{
     }
 }
 @media screen and (max-width: 768px){
+    .descarga a{
+        top: 950px;
+        }
     #menu li a{
         padding: 10px;
         font-size: 15px;
@@ -654,6 +676,9 @@ h3{
     }
 }
 @media screen and (max-width: 550px){
+    .descarga a{
+        top:900px;
+        }
     #imagenes{
         top: 0;
     }
@@ -766,6 +791,9 @@ opacity: 100%;
 }
 }
 @media screen and (max-width: 380px){
+    .descarga a{
+    top: 200px;
+    }
     .nav #menu{
         width: 60%;
     }
@@ -856,6 +884,9 @@ opacity: 100%;
     .nav #menu{
         width: 60%;
     }
+    .descarga a{
+        top: 480px;
+        }
 
     .presentacion{
         top: 100px;
@@ -1018,6 +1049,10 @@ opacity: 100%;
     width: 45%;  
     top: 1000px;
 }
+.descarga a{
+    top: 950px;
+    right: 50px;
+    }
 
 }
 @media screen and (max-width: 411px){
@@ -1197,6 +1232,10 @@ opacity: 100%;
     .foto{
         top: 50px;
     }
+    .descarga a{
+        top: 850px;
+        right: 50px;
+        }
     
 
     .presentacion{
@@ -1368,6 +1407,10 @@ opacity: 100%;
 
 }
 @media screen and (max-width: 375px){
+    .descarga a{
+        top: 750px;
+        right:50px;
+        }
     .css3{
         top: 360px;
     }
